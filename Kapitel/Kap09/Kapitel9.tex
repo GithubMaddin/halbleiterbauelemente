@@ -1,107 +1,82 @@
-
-\todo{Wichtige Begriffe erklären}
+\subsection{Nutzung von Sonnenenergie}
 
-\subsection{Nutzung von Sonnenenergie}
-	\subsubsection{Gegenwärtige Energiequellen}
-	\subsubsection{Mögliche Entwicklungen}
+	\subsubsection{Gegenwärtige Energiequellen}
+		Deutschland hat einen Anteil von 38,5\% an regenerativen Energiequellen. Der Anteil an Solarenergie ist über Europa hinweg stark schwankend, der höchste Anteil liegt im Skandinavischen Raum. Die erste Solarzelle wurde 1954 entwickelt und hatte einen Wirkungsgrade zwischen 4 und 6 Prozent.\\
+		{\bfseries Vorteile von Solarzellen}\\
+		\begin{itemize}
+			\item Unbegrenzt vorhanden
+			\item Emissionslos
+			\item Reduzierung von energiepolitischen Abhängigkeiten
+		\end{itemize}
+		{\bfseries Nachteile von Solarzellen}\\
+		\begin{itemize}
+			\item Nicht konstant (Wetter, Jahreszeiten, Tageszeiten...)	
+			\item Herstellung nicht emissionsfrei
+			\item Hohe Kosten	
+		\end{itemize}
+	\subsubsection{Brandenburg ist toll}
+	\subsubsection{Mögliche Entwicklungen}
+		{\bfseries Auslaufzeit der Fossilen Energieträger}
+		\begin{itemize}
+			\item Kohle ca. 100 Jahre
+			\item Erdgas und Erdöl ca. 50 Jahre
+			\item Uran ca. 70 Jahre
+		\end{itemize}
 
-\subsection{Funktionsweise einer Solarzelle}
-	\subsubsection{Grundprinzip}
-	\subsubsection{Warum braucht man eine pn-Struktur}
-	\subsubsection{Wirkungsgrade, Ursachen für Verluste}
-\subsection{Typen von Solarzellen}
-	\subsubsection{Verschiedene Materialien}
-	\subsubsection{Verschiedene Konstruktionen}
+\subsection{Funktionsweise einer Solarzelle}
 
+	\subsubsection{Grundprinzip}
+	
+		\paragraph{Massendefekt}
+		Nimmt man die Summe aller Nukleonen(Protonen und Neutronen) und vergleicht diese mit der tatsächlich gemessen Masse, so stellt man fest, dass es eine Differenz gibt. Nach Einstein gilt  $E = m\cdot c^2$, also gibt es einen direkten Zusammenhang zwischen Energie und Masse. Der Massendefekt ist somit eine Energiedifferenz, welche die Bindungsenergie. Kommt es nun zu Kernumwandlungen, kann diese Energie freigegeben werden.
+		
+		\paragraph{Kernfusion}
+		Bei der ersten Stufe der Kernfusion in der Sonne kommt es zur einfachen Fusion von einem Deuterium und einem Tritium zu einem Heliumkern und Neutron. Dabei sind Deuterium und Tritium Isotope des Wasserstoffatoms. Sie besitzen einmal 2 (Deuterium) und 3 (Tritium) Neutronen und je ein Proton. Bei der Fusion wird die überschüssige Bindungsenergie in Form von Photonen abgegeben.
+		$H^3 + H^2 \rightarrow He + n$
+		
+		\paragraph{Aufbau}
+		95\% aller Solarzellen bestehen aus Silizium, in Speziellen Anwendungsfällen werden auch andere Halbleitermaterialien wie GaAs oder Ge verwendet. Grundlegend besteht eine Solarzelle dann aus einem np-Übergang. Dabei muss die n Schicht sehr dünn sein, damit das einfallende Lich an den Übergang gelangen kann.
+		
+		\paragraph{Photoelektrischer Effekt}
+		Der Photoelektrische Effekt beschreibt zwei unterschiedliche Phänomene. Zum einen gibt es den Äußeren Photoelektrischen Effekt. Bei diesem werden Elektronen durch Bestrahlung aus einer Oberfläche gelöst. Dieser Effekt ist aber nicht weiter für die Funktion von Solarzellen wichtig. Der Innere Photoelektrische Effekt hingegen schon. Bei diesem wird ein Halbleiter durch Lichteinstrahlung leitender, da Elektronen durch die Energie der Photonen aus ein höheres Valenzband gehoben werden.
+		
+		\paragraph{Ablauf}
+		Durch die Lichteinstrahlung werden Elektronen-Lochpaare erzeugt. Innerhalb der Solarzelle müssen diese Ladungen nun getrennt werden, bevor sie sich wieder rekombinieren. Durch die Ladungstrennung kommt es zu einer Leerlaufspannung, welche bei Silizium ungefähr 0.5V beträgt und durch die Bandlücke festgelegt ist. \\
+		$Stromabgabe = Generation - Rekombination = J = J_SC - J_0 \bigg(e^{\frac{qV}{kT}}-1\bigg)$\\
+		Die Stromabgabe entspricht dabei der Differenz von generiertem Strom und dem Teil, der wieder rekombiniert. Der Rekombinationsteil kann dabei wie ein Diodenstrom betrachtet werden.
+		
+		Kennlinie wie bei einer Diode, aber verschiebt sich bei Sonneneinstrahlung
+		
+		Maximum Power Point bei P=J*V = max
+		
+		Füllfaktor ist Verhältnis zwischen Leistung und MPP
+		
 
+	\subsubsection{Warum braucht man eine pn-Struktur}
 
-\subsection{Auslaufen der Energie Reserven}
-Kohle ca. 100 Jahre
-Erdgas und Erdöl ca. 50 Jahre
-Uran ca. 70 Jahre
+		Der pn-Übergang ist für die Kontaktierung. Die Fermi.Level der Metallkontakte richtet sich nach dem der angrenzenden Majoritäten
 
-\subsection{Anteile an Erneuerbaren Energie}
-Vor allem Skandinavien
-Deutschland 38,5\% am gesamten Strommix
+	\subsubsection{Wirkungsgrade, Ursachen für Verluste}
+	
+		MPP / Lichtintensität
+		
+		\paragraph{Ursachen für Verluste} Es gibt mehrere Ursachen für Verlust. Zum einen entstehen massive Verluste durch die Unterschiedlichen Wellenlängen des eintretenden Lichts. Ist die Wellenlänge zu groß, so reicht die Energie nicht aus um ein Elektron in das Leitungsband zu heben ($E_g>hf$). Anders herum tritt es auch auf, dass das Licht eine zu niedrige Wellenlänge ausweist. Dann wird ein Elektron auf das höhere Niveau gehoben, die überschüssige Energie wird jedoch in Wärme umgesetzt ($hv > E_g$). Die Verluste können allerdings auch durch den Aufbau aufkommen. So versperren die Kontaktierungen einen Bereich, sodass in diesem kein Licht mehr eintreffen kann. Außerdem gibt es sowohl im Halleiter, als auch auf den Leitern ohmsche Widerstandsverluste.
+	
 
-\subsection{Massendefekt}
-Masse $\leftrightarrow$ Energie: $E = m\cdot c^2$
-Massendefekt = Bindungsenergie
-Diese Energie wird bei Kernumwandlungen freigesetzt
+\subsection{Typen von Solarzellen}
 
-\subsection{Kernfusion}
-$Deuterium H^3 + Tritium H^2 \rightarrow Heliumkern He^2 + n$
+	\subsubsection{Verschiedene Materialien}
+		\paragraph{Monokristalines Silizium} erreicht Wirkungsgrade von 16-22\%. Somit ist das beste, was aus Silizium hergestellt werden kann. Jedoch ist es sehr teuer.
+		
+		\paragraph{Polykristalines Silizium} erreicht mit 15-16\% einen recht hohen Wirkungsgrad bei günstigerem Preis.
 
-\subsection{Geschichte}
-Erste Solarzelle (1954)
-4-6\% Wirkungsgrad
+		\paragraph{Amporphes Silizium} hat einen recht niedrigen Wirkungsgrad mit 6-8\%. Jedoch ist es auch sehr billig und kann für einfache Anwendungen, wie z.B. Taschenrechner o.ä. verwendet werden.
 
-\subsection{Vorteile Solarenergie}
-Unbegrenzt vorhanden
-Emissionslos
-Reduzierung von energiepolitischen Abhängigkeiten
-
-\subsection{Nachteile Solarenergie}
-Nicht konstant (Wetter, Jahreszeiten, Tageszeiten...)
-Herstellung nicht emissionsfrei
-Hohe Kosten
-
-\subsection{Brandenburg ist toll}
-
-\subsection{Aufbau}
-95% aler Solarzellen aus Silizium
-np-Halbleiter Aufbau
-n Schicht ist sehr dünn, damit das Licht an den pn-Übergang gelangen kann
-
-\subsection{Photoelektrischer Effekt}
-Äußerer (nicht für Solarzellen relevant)
-Aufgeladene Oberfläche gibt Elektronen bei Bestrahlung ab
-Innerer (relevant für Solarzellen)
-besser Leitfähigkeit bei Beleuchtung, da Elektronen auf höheres Valenzband gehoben werden
-
-\subsection{Ablauf}
-Licht sorgt dafür, dass Elektronen in die n Schicht und Löcher in die p Schicht wandern. Können an Kontakten abgegriffen werden.
-Elektronen-Loch-Paare müssen vor der Rekombination getrennt werden
-Spannung immer ähnlich (0.5 V bei Silizium), Strom steigt mit Beleuchtungsstärke an
-Leistung ist temperaturabhängig
-
-$Stromabgabe = Generation - Rekombination = J = J_SC - J_0 \bigg(e^{\frac{qV}{kT}}-1\bigg)$
-Rekombination = Dunkel-Diodenstrom
-Keine Annahme über pn- Übergang für die Formale notwendig
-
-Der pn-Übergang ist für die Kontaktierung. Die Fermi.Level der Metallkontakte richtet sich nach dem der angrenzenden Majoritäten
-Somit könne die Löcher durch p und Elektronen durch n Halbleiter kontaktiert werden. Fließen nach außen ab.
-
-Kennlinie wie bei einer Diode, aber verschiebt sich bei Sonneneinstrahlung
-
-Maximum Power Point bei P=J*V = max
-Füllfaktor ist Verhältnis zwischen Leistung und MPP
-
-\subsection{Wirkungsgrad}
-MPP / Lichtintensität
-Photonen nicht energetisch genug ($hv < E_g$)
-Photonen haben Überschussenergie die in Wärme umgesetzt wird ($hv > E_g$)
-Abschattung durch Kontakte
-Widerstandsverluste
-Es kann nicht das gesamte Spektrum genutzt werden
-Theoretisch auf 32,2\% bei Licht von 1,12 ev begrenzt
-
-\subsection{Verschiede Arten}
-Monokristalines Silizium 16-22\%
-am besten, aber auch teuer
-Polykristalines Silizium 15-16\%
-verbreiteter, da billiger
-Amporphes Silizium 	6-8\%
-
-\subsection{Neue Wege}
-\begin{itemize}
-	\item Anschlüsse von hinten
-	\item Oberflächentexturierung zur Flächen Maximierung z.B. auf-ätzen
-	\item Bündeln mit z.B. Linsen
-	\item Mehrere Zellen für verschiedene Wellenlängen hintereinander
-\end{itemize}s
-
-
-\todo{Fragen aus Own Clowd zuordnen}
-\todo{Gruppenübungs-Inhalte ergänzen}
-
+	\subsubsection{Verschiedene Konstruktionen}
+		\begin{itemize}
+			\item Anschlüsse von hinten
+			\item Oberflächentexturierung zur Flächen Maximierung z.B. auf-ätzen
+			\item Bündeln mit z.B. Linsen
+			\item Mehrere Zellen für verschiedene Wellenlängen hintereinander
+		\end{itemize}
+		
