@@ -1,0 +1,108 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\RequirePackage[l2tabu, orthodox]{nag}  % Tells you when you use outdated packages
+\documentclass[paper=a4, fontsize=11pt, titlepage=off]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[utf8]{inputenc}  % Encoding
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{lmodern}
+\usepackage[main=ngerman,english]{babel} % German/English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{mathtools}  % For prescript, mathclap etc. 
+\usepackage{microtype}  % Makes more beautiful text
+\usepackage{booktabs}  % Creates more beautiful Tables
+\usepackage{graphicx}  % For graphics 
+\usepackage{todonotes}  % Todo notes (\todo{Test})
+\usepackage{ifthen}
+
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{listings}  % Required for insertion of code
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+%\usepackage{sectsty} % Allows customizing section commands
+%\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	HEADER FOOTER
+%----------------------------------------------------------------------------------------
+
+
+%\usepackage{scrlayer-scrpage} % Custom headers and footers
+%\usepackage{fancyhdr} % Custom headers and footers
+%\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+%\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+%\fancyfoot[L]{} % Empty left footer
+%\fancyfoot[C]{} % Empty center footer
+%\fancyfoot[R]{\thepage} % Page numbering for right footer
+%\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+%\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+%\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\usepackage[footsepline]{scrlayer-scrpage}
+%\renewcommand\sectionmarkformat{\thesection\autodot\quad}
+\setkomafont{pageheadfoot}{\footnotesize\scshape}
+
+%\automark{part}
+%\automark*{section}
+\clearpairofpagestyles% entfernen der voreingestellten Inhalte
+\ifoot{\thesection}
+\ofoot{\thepage}
+\ihead{\customtitle}
+%\ohead{}
+
+
+
+
+%----------------------------------------------------------------------------------------
+% SECTIONS
+%----------------------------------------------------------------------------------------
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\newcommand{\sectionruler}{\rule{0.45\linewidth}{1.5pt}}
+\newcommand{\subsectionruler}{\rule{0.45\linewidth}{0.5pt}}
+\let\stdsection\section
+%\renewcommand\section{\ifthenelse{\equal{\arabic{section}}{0}}
+%	{\stdsection}
+%	{\newpage\stdsection\LARGE\arbic{\thesection}}
+
+\renewcommand\section{\newpage\stdsection}
+%\renewcommand*{\sectionformat}{%
+%	\sectionruler\quad
+%	\thesection
+%	\quad\sectionruler
+%	%\textls{}\enskip\chapternumbersize\thesection\\
+%}
+\setkomafont{section}{\rmfamily\Large\scshape}
+
+
+%\renewcommand\thesection{\sectionruler\quad\arabic{UEBUNG}.\arabic{section}\quad\sectionruler}
+%\renewcommand\thesubsection{\subsectionruler\quad\arabic{UEBUNG}.\arabic{section}.\arabic{subsection}\quad\subsectionruler}
+%\renewcommand\thesection{\arabic{UEBUNG}.\arabic{section}}
+%\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+
+%----------------------------------------------------------------------------------------
+%	NEW COMMANDS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	NEW ENVIRONMENTS
+%----------------------------------------------------------------------------------------
+\newenvironment{detpmatrix}{\left|\begin{pmatrix}}{\end{pmatrix}\right|}
+\newenvironment{matrixarray}[1]{\left(\begin{array}{#1}\end{array}\right)}
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+
+\newcounter{UEBUNG}
+\newboolean{printNames}
+\newboolean{printWithMatrikelNumbers}

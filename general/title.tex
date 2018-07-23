@@ -1,0 +1,65 @@
+
+
+%----------------------------------------------------------------------------------------
+%	SETTINGS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\customauthors}{}
+\newcommand{\customMatrikel}{}
+\newcommand{\customtitle}{Zusammenfassung Halbleiterbauelemente}  % TODO
+\newcommand{\university}{Gottfried Wilhelm Leibnizuniversität Hannover}
+\newcommand{\studiengang}{Technische Informatik}
+\newcommand{\Uebungsstunde}{Martin Friedric, ...} % TODO
+\newcommand{\Uebungsleiter}{}  % TODO
+
+
+%----------------------------------------------------------------------------------------
+%	PDF SETTINGS
+%----------------------------------------------------------------------------------------
+
+
+\usepackage[%
+pdftitle={\customtitle},
+pdfauthor={\customauthors},
+pdfsubject={},   % TODO Subject
+pdfcreator={LaTeX with KOMA-Script},
+pdfkeywords={},
+pdfpagemode=UseOutlines,
+pdfdisplaydoctitle=true,
+pdflang=de																 
+]{hyperref}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\createtitle}{
+\vspace*{\fill} % Comment for upper alignment
+\thispagestyle{empty} % Comment to show footsepline and pagenumber
+\setcounter{page}{0}
+\begin{center}
+	\normalfont \normalsize 
+	\textsc{\university} % Your university, school and/or department name(s)
+	\\ [15pt] % Your university, school and/or department name(s)
+	\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+	\huge \textsf{\customtitle} \\ % The assignment title
+	\horrule{1.5pt} 
+	\\[0.4cm] % Thick bottom horizontal rule
+	%\normalsize
+	\Large
+
+	~\\[25pt]
+	\large\textbf{\studiengang}\\
+	\Large\textsf{\Uebungsstunde} \\
+	\large\textsf{\Uebungsleiter} \\
+	%\Large\today\\
+	%\customauthors
+	%\horrule{3pt} % Thick bottom horizontal rule
+	%~\\[1cm]
+\end{center}	
+\vspace*{\fill}
+}
