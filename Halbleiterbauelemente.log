@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  13 JUL 2018 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.2)  23 JUL 2018 15:25
 entering extended mode
 **./Halbleiterbauelemente.tex
 (Halbleiterbauelemente.tex
@@ -1620,29 +1620,39 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 18.
  (Kapitel/Kap03/Kapitel3.tex
-Overfull \hbox (25.22482pt too wide) in paragraph at lines 3--3
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+
+Overfull \hbox (25.22482pt too wide) in paragraph at lines 18--18
 [][][][]\T1/lmr/m/n/10.95 (-20) Gruppenübungs- 
  []
 
 
-Overfull \hbox (25.22482pt too wide) in paragraph at lines 3--3
+Overfull \hbox (25.22482pt too wide) in paragraph at lines 18--18
 [][][][]\T1/lmr/m/n/10.95 (-20) Gruppenübungs- 
  []
 
 
-Overfull \hbox (25.22482pt too wide) in paragraph at lines 3--3
+Overfull \hbox (25.22482pt too wide) in paragraph at lines 18--18
 [][][][]\T1/lmr/m/n/10.95 (-20) Gruppenübungs- 
  []
 
 
-Overfull \hbox (25.22482pt too wide) in paragraph at lines 3--3
+Overfull \hbox (25.22482pt too wide) in paragraph at lines 18--18
 [][][][]\T1/lmr/m/n/10.95 (-20) Gruppenübungs- 
  []
 
 )
-
-LaTeX Warning: Marginpar on page 3 moved.
-
 
 LaTeX Warning: Marginpar on page 3 moved.
 
@@ -1949,7 +1959,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 
-<Kapitel/Kap11/direkte_indirekte_halbleiter.PNG, id=288, 550.55687pt x 279.5443
+<Kapitel/Kap11/direkte_indirekte_halbleiter.PNG, id=300, 550.55687pt x 279.5443
 7pt>
 File: Kapitel/Kap11/direkte_indirekte_halbleiter.PNG Graphic file (type png)
  <use Kapitel/Kap11/direkte_indirekte_halbleiter.PNG>
@@ -2156,7 +2166,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 15.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<Kapitel/Kap01/test.png, id=317, 1671.24374pt x 849.1725pt>
+<Kapitel/Kap01/test.png, id=329, 1671.24374pt x 849.1725pt>
 File: Kapitel/Kap01/test.png Graphic file (type png)
 
 <use Kapitel/Kap01/test.png>
@@ -2200,7 +2210,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `Halbleiterbauelemente.out' has not changed.
-(rerunfilecheck)             Checksum: 225CD095477AB11E69EAEEAB9A9FD7C3;3896.
+(rerunfilecheck)             Checksum: 5575F3EED8ED50D522378B2934F6ED79;4149.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2208,11 +2218,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 25918 strings out of 493323
- 499286 string characters out of 3139063
- 766207 words of memory out of 3000000
- 28765 multiletter control sequences out of 15000+200000
- 73455 words of font info for 79 fonts, out of 3000000 for 9000
+ 25926 strings out of 493323
+ 499408 string characters out of 3139063
+ 766221 words of memory out of 3000000
+ 28768 multiletter control sequences out of 15000+200000
+ 73538 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,20n,101p,8857b,712s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -2228,9 +2238,9 @@ e1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmssbx10.pfb>
-Output written on Halbleiterbauelemente.pdf (17 pages, 540775 bytes).
+Output written on Halbleiterbauelemente.pdf (17 pages, 543202 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
- 25511 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 25535 words of extra memory for PDF output out of 29859 (max. 10000000)
 
