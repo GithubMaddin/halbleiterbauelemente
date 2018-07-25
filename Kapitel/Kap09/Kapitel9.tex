@@ -41,26 +41,44 @@
 		Der Photoelektrische Effekt beschreibt zwei unterschiedliche Phänomene. Zum einen gibt es den Äußeren Photoelektrischen Effekt. Bei diesem werden Elektronen durch Bestrahlung aus einer Oberfläche gelöst. Dieser Effekt ist aber nicht weiter für die Funktion von Solarzellen wichtig. Der Innere Photoelektrische Effekt hingegen schon. Bei diesem wird ein Halbleiter durch Lichteinstrahlung leitender, da Elektronen durch die Energie der Photonen aus ein höheres Valenzband gehoben werden.
 		
 		\paragraph{Ablauf}
-		Durch die Lichteinstrahlung werden Elektronen-Lochpaare erzeugt. Innerhalb der Solarzelle müssen diese Ladungen nun getrennt werden, bevor sie sich wieder rekombinieren. Durch die Ladungstrennung kommt es zu einer Leerlaufspannung, welche bei Silizium ungefähr 0.5V beträgt und durch die Bandlücke festgelegt ist. \\
-		$Stromabgabe = Generation - Rekombination = J = J_SC - J_0 \bigg(e^{\frac{qV}{kT}}-1\bigg)$\\
-		Die Stromabgabe entspricht dabei der Differenz von generiertem Strom und dem Teil, der wieder rekombiniert. Der Rekombinationsteil kann dabei wie ein Diodenstrom betrachtet werden.
+		Durch die Lichteinstrahlung werden Elektronen-Lochpaare erzeugt. Innerhalb der Solarzelle müssen diese Ladungen nun getrennt werden, bevor sie sich wieder rekombinieren. Durch die Ladungstrennung kommt es zu einer Leerlaufspannung, welche bei Silizium ungefähr 0.5V beträgt und durch die Bandlücke festgelegt ist.  \\
+		$Stromabgabe = Generation - Rekombination = J = J_{SC} - J_0 \bigg(e^{\frac{qV}{mkT}}-1\bigg)$\\s
+		Die Stromabgabe entspricht dabei der Differenz von generiertem Strom und dem Teil, der wieder rekombiniert. Der Rekombinationsteil kann dabei wie ein Diodenstrom betrachtet werden. Der Wert m ist der Idealitätsfaktor. Er ist ein Wert aus dem Intervall $[1,2]$
 		
-		Kennlinie wie bei einer Diode, aber verschiebt sich bei Sonneneinstrahlung
+		Die Kennlinie einer Solarzelle (\ref{9_kennlinie}), welche im Grunde einer Photodiode sehr ähnlich ist, ist die wie einer Diode. Bei Lichteinstrahlung verschiebt sich die Kennlinie.
 		
-		Maximum Power Point bei P=J*V = max
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.3\textwidth]{Kapitel/Kap09/kennlinie.png}
+			\caption{Kennlinie einer Solarzelle}
+			\label{9_kennlinie}
+		\end{figure}
 		
-		Füllfaktor ist Verhältnis zwischen Leistung und MPP
+		Innerhalb der Kennlinie kann man den Maxium Power Point (MPP) finden. Die Leistung P berechnet sich wie bekannt durch P = V*J. Der MPP liegt somit kurz hinter dem Knick in der direkten Kennlinie. 
 		
+		Über den MPP lässt sich später der Wirkungsgrad berechnen. Außerdem lässt sich der Füllfaktor bestimmen. Dieser ist das Verhältnis zwischen dem Produkt der Leerlaufspannung und des Kurzschlussstroms und maximaler Leistung:\\
+		
+		$ FF = \frac{P_{max}}{J_{Kurzschluss}V_{Leerlauf}}$\\
+
+		Je kleiner der Idealitätsfaktor ist, desto größer ist auch der Füllfaktor.
 
 	\subsubsection{Warum braucht man eine pn-Struktur}
 
-		Der pn-Übergang ist für die Kontaktierung. Die Fermi.Level der Metallkontakte richtet sich nach dem der angrenzenden Majoritäten
+		Der pn-Übergang ist für die Kontaktierung. Die Fermi-Level der Metallkontakte richtet sich nach dem der angrenzenden Majoritäten. Durch den pn-Übergang entsteht ein elektrisches Feld, welches die Ladungen separiert und nach außen trägt. 
 
 	\subsubsection{Wirkungsgrade, Ursachen für Verluste}
 	
-		MPP / Lichtintensität
+		\paragraph{Wirkungsgrad} Möchte man nun den Wirkungsgrad berechnen, so benötigt man den MPP und die einfallende Lichtintensität. Der Wirkungsgrad lässt sich somit wie folgt berechnen:\\
+		$\eta = \frac{MPP}{Lichtintensität}$
 		
-		\paragraph{Ursachen für Verluste} Es gibt mehrere Ursachen für Verlust. Zum einen entstehen massive Verluste durch die Unterschiedlichen Wellenlängen des eintretenden Lichts. Ist die Wellenlänge zu groß, so reicht die Energie nicht aus um ein Elektron in das Leitungsband zu heben ($E_g>hf$). Anders herum tritt es auch auf, dass das Licht eine zu niedrige Wellenlänge ausweist. Dann wird ein Elektron auf das höhere Niveau gehoben, die überschüssige Energie wird jedoch in Wärme umgesetzt ($hv > E_g$). Die Verluste können allerdings auch durch den Aufbau aufkommen. So versperren die Kontaktierungen einen Bereich, sodass in diesem kein Licht mehr eintreffen kann. Außerdem gibt es sowohl im Halleiter, als auch auf den Leitern ohmsche Widerstandsverluste.
+		\paragraph{Ursachen für Verluste} Es gibt mehrere Ursachen für Verlust. Zum einen entstehen massive Verluste durch die Unterschiedlichen Wellenlängen des eintretenden Lichts. Ist die Wellenlänge zu groß, so reicht die Energie nicht aus um ein Elektron in das Leitungsband zu heben ($E_g>hf$). Anders herum tritt es auch auf, dass das Licht eine zu niedrige Wellenlänge ausweist. Dann wird ein Elektron auf das höhere Niveau gehoben, die überschüssige Energie wird jedoch in Wärme umgesetzt ($hv > E_g$). Dieses Verhalten lässt sich auch gut durch eine spektrale Darstellung zeigen (\ref{9_spektrum}). Die Verluste können allerdings auch durch den Aufbau aufkommen. So versperren die Kontaktierungen einen Bereich, sodass in diesem kein Licht mehr eintreffen kann. Außerdem gibt es sowohl im Halbleiter, als auch auf den Leitern, ohmsche Widerstandsverluste.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\textwidth]{Kapitel/Kap09/spektrum.png}
+			\caption{Spektrale Ausnutzung einer Si-Solarzelle}
+			\label{9_spektrum}
+		\end{figure}
 	
 
 \subsection{Typen von Solarzellen}
@@ -74,7 +92,7 @@
 
 	\subsubsection{Verschiedene Konstruktionen}
 		\begin{itemize}
-			\item Anschlüsse von hinten
+			\item Anschlüsse von hinten, damit weniger Fläche abgedeckt wird
 			\item Oberflächentexturierung zur Flächen Maximierung z.B. auf-ätzen
 			\item Bündeln mit z.B. Linsen
 			\item Mehrere Zellen für verschiedene Wellenlängen hintereinander
