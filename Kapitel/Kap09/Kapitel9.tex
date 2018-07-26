@@ -1,14 +1,14 @@
 \subsection{Nutzung von Sonnenenergie}
 
 	\subsubsection{Gegenwärtige Energiequellen}
-		Deutschland hat einen Anteil von 38,5\% an regenerativen Energiequellen. Der Anteil an Solarenergie ist über Europa hinweg stark schwankend, der höchste Anteil liegt im Skandinavischen Raum. Die erste Solarzelle wurde 1954 entwickelt und hatte einen Wirkungsgrade zwischen 4 und 6 Prozent.\\
-		{\bfseries Vorteile von Solarzellen}\\
+		Deutschland hat einen Anteil von 38,5\% an regenerativen Energiequellen. Der Anteil an Solarenergie ist über Europa hinweg stark schwankend, der höchste Anteil liegt im Skandinavischen Raum. Die erste Solarzelle wurde 1954 entwickelt und hatte einen Wirkungsgrade zwischen 4 und 6 Prozent.
+		\paragraph{Vorteile von Solarzellen}
 		\begin{itemize}
 			\item Unbegrenzt vorhanden
 			\item Emissionslos
 			\item Reduzierung von energiepolitischen Abhängigkeiten
 		\end{itemize}
-		{\bfseries Nachteile von Solarzellen}\\
+		\paragraph{Nachteile von Solarzellen}
 		\begin{itemize}
 			\item Nicht konstant (Wetter, Jahreszeiten, Tageszeiten...)	
 			\item Herstellung nicht emissionsfrei
@@ -41,12 +41,13 @@
 		Der Photoelektrische Effekt beschreibt zwei unterschiedliche Phänomene. Zum einen gibt es den Äußeren Photoelektrischen Effekt. Bei diesem werden Elektronen durch Bestrahlung aus einer Oberfläche gelöst. Dieser Effekt ist aber nicht weiter für die Funktion von Solarzellen wichtig. Der Innere Photoelektrische Effekt hingegen schon. Bei diesem wird ein Halbleiter durch Lichteinstrahlung leitender, da Elektronen durch die Energie der Photonen aus ein höheres Valenzband gehoben werden.
 		
 		\paragraph{Ablauf}
-		Durch die Lichteinstrahlung werden Elektronen-Lochpaare erzeugt. Innerhalb der Solarzelle müssen diese Ladungen nun getrennt werden, bevor sie sich wieder rekombinieren. Durch die Ladungstrennung kommt es zu einer Leerlaufspannung, welche bei Silizium ungefähr 0.5V beträgt und durch die Bandlücke festgelegt ist.  \\
-		$Stromabgabe = Generation - Rekombination = J = J_{SC} - J_0 \bigg(e^{\frac{qV}{mkT}}-1\bigg)$\\s
-		Die Stromabgabe entspricht dabei der Differenz von generiertem Strom und dem Teil, der wieder rekombiniert. Der Rekombinationsteil kann dabei wie ein Diodenstrom betrachtet werden. Der Wert m ist der Idealitätsfaktor. Er ist ein Wert aus dem Intervall $[1,2]$
-		
-		Die Kennlinie einer Solarzelle (\ref{9_kennlinie}), welche im Grunde einer Photodiode sehr ähnlich ist, ist die wie einer Diode. Bei Lichteinstrahlung verschiebt sich die Kennlinie.
-		
+		Durch die Lichteinstrahlung werden Elektronen-Lochpaare erzeugt. Innerhalb der Solarzelle müssen diese Ladungen nun getrennt werden, bevor sie sich wieder rekombinieren. Durch die Ladungstrennung kommt es zu einer Leerlaufspannung, welche bei Silizium ungefähr 0.5V beträgt und durch die Bandlücke festgelegt ist.  
+		\begin{align}
+			Stromabgabe = Generation - Rekombination = J = J_{SC} - J_0 \bigg(e^{\frac{qV}{mkT}}-1\bigg)
+		\end{align}
+		Die Stromabgabe entspricht dabei der Differenz von generiertem Strom und dem Teil, der wieder rekombiniert. Der Rekombinationsteil kann dabei wie ein Diodenstrom betrachtet werden. Der Wert m ist der Idealitätsfaktor. Er ist ein Wert aus dem Intervall $[1,2]$.
+
+		\paragraph{Kennlinie} Die Kennlinie einer Solarzelle (\ref{9_kennlinie}), welche im Grunde einer Photodiode sehr ähnlich ist, ist die wie einer Diode. Bei Lichteinstrahlung verschiebt sich die Kennlinie.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.3\textwidth]{Kapitel/Kap09/kennlinie.png}
@@ -54,12 +55,12 @@
 			\label{9_kennlinie}
 		\end{figure}
 		
-		Innerhalb der Kennlinie kann man den Maxium Power Point (MPP) finden. Die Leistung P berechnet sich wie bekannt durch P = V*J. Der MPP liegt somit kurz hinter dem Knick in der direkten Kennlinie. 
+		\paragraph{MPP} Innerhalb der Kennlinie kann man den Maximum Power Point (MPP) finden. Die Leistung P berechnet sich wie bekannt durch P = V*J. Der MPP liegt somit kurz hinter dem Knick in der direkten Kennlinie. 
 		
-		Über den MPP lässt sich später der Wirkungsgrad berechnen. Außerdem lässt sich der Füllfaktor bestimmen. Dieser ist das Verhältnis zwischen dem Produkt der Leerlaufspannung und des Kurzschlussstroms und maximaler Leistung:\\
-		
-		$ FF = \frac{P_{max}}{J_{Kurzschluss}V_{Leerlauf}}$\\
-
+		\paragraph{Füllfaktor} Über diesen lässt sich der Füllfaktor bestimmen. Dieser ist das Verhältnis zwischen dem Produkt der Leerlaufspannung und des Kurzschlussstroms und maximaler Leistung:
+		\begin{align}
+			FF = \frac{P_{max}}{J_{Kurzschluss}V_{Leerlauf}}
+		\end{align} 
 		Je kleiner der Idealitätsfaktor ist, desto größer ist auch der Füllfaktor.
 
 	\subsubsection{Warum braucht man eine pn-Struktur}
