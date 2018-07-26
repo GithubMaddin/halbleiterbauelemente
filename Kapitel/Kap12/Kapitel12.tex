@@ -1,26 +1,68 @@
 \todo{Wichtige Begriffe erklären}
 
+\subsection{Grundlagen}
+	\subsubsection{Terminologie}
+	
+	\paragraph{Chip, die, device, IC, circuit, microchip} Diese Begriffe beschreiben einen einzelnen Chip auf einem Wafer.
+	
+	\paragraph{Edge die} Chips die am Rand des Wafers liegen, und somit nicht funktionsfähig sind. 
+	
+	\paragraph{Notch} Beschreibt eine Einbuchtung, um die Kristallrichtung zu markieren. 
+	
+	\paragraph{Scibe lines, saw lines, streets and avenues} Trennlinien, die die einzelnen Chips voneinander trennen.
+	
+	\paragraph{Engineering die, test die} Felder, auf denen sich keine Chips befinden. Diese könne für Test verwendet werden.
+	
+	\subsubsection{Verunreinigungen}
+	
+	Schon kleinste Verunreinigungen können einen kompletten Chip zerstören. Schon ein Korn von $0.1{\mu}m$ überdeckt kleinste Strukturen ($5nm$ ist die dicke eines Transistor Gates).
+	Es gibt ISO Klassen für Reinräume.
+	
+	\subsubsection{Schichten}
+	
+	\paragraph{Isolation} Als Isolationsschichten kommen unter anderem Siliziumoxid, Siliziumnitrid Gläser, High-K oder Low-K Materialien zum Einsatz.
+	
+	\paragraph{Leiter} Zu den leitenden Schichten zählen zum Beispiel Leiterbahnen aus Aluminium uind Kupfer, Kontaktstöpsel aus Wolfram und Barriereschichten aus Titan und Titannitrid.
+	
+	\paragraph{Halbleitende Schichten} Dazu zählen die Klassiker wie Silizium, Germanium und Verbindungshalbleitern aus diesen.
+	
+\subsection{Herstellung}
+	\subsubsection{Zyklus 0}
+	Im ersten Zyklus wird Rohsilizium zu Reinstsilizium gereinigt. Durch bereits genannte Verfahren wird daraus einkristallines Silizium in Waferform hergestellt und geschnitten.
+	\subsubsection{Zyklus 1}
+	Nun werden einige Prozessschritte immer wieder wiederholt. Dabei werden nach und nach Strukturelemente aufgetragen. Zu den Schritten gehört:
 
+	\paragraph{Reinigung} Selbst an der Luft entsteht durch den Luftsauerstoff eine kleine Siliziumoxid Schicht. Diese uss mit geeigneten Mitteln zunächst entfernt werden.
+	
+	\paragraph{Schichtabscheidung}  
+	
+	\paragraph{Oxidwachstum} Soll z.B. eine Dotierung implantiert werden oder soll  generell ein Oxid aufgebracht werden, muss dieses zunächst entstehen. Dies kann z.B. mit thermischer Oxidation geschehen.
+	
+	\paragraph{Strukturübertragung (Lithografie)} Nun wird die eigentliche gewünschte Struktur aufgetragen. Dazu wird zunächst ein Photolack auf die Oberfläche gebracht. Dieser wird dann durch eine Maske belichtet. An den belichteten Stellen lässt sich dieser danach wieder entfernen. Dieser Prozess wird entwickeln genannt.
+	
+	\paragraph{Strukturierung (Ätzen)} Nun lässt sich das Oxid an den stellen ohne Photolack entfernen.
+	
+	\paragraph{Materialabtrag/Dotieren} Dieser Schritt ist der Hauptschritt des gesamten Prozesses. Bei diesem wird zum Beispiel durch chemische Abtragung Material entfernt oder durch Diffusion oder Ionen-Implantation dotiert.
+	
+	\paragraph{Reinigung} Nun kommt es wieder zu einer Reinigung. Dabei wird der restliche Photolack und die Schutzoxidschicht von der Oberfläche abgetragen.
+	
+	\paragraph{Kontaktieren, Metallizierung} Im letzten Schritt der Schleife werden Kontakte oder Leiterbahnen aus Metall aufgetragen.
+	
+	\subsubsection{Zyklus 2}
+	Zuletzt werden die Wafer getestet, die einzelnen Chips herausgeschnitten und in die entgültige Verpackung eingebaut. Dazu gehört auch das anschließen von Bondrähten.
+	
 \subsection{Technologieverfahren}
-	\subsubsection{}
-	\subsubsection{}
-	\subsubsection{}
-\subsection{}
-	\subsubsection{}
-	\subsubsection{}
-	\subsubsection{}
-\subsection{}
-	\subsubsection{}
-	\subsubsection{}
-	\subsubsection{}
-\subsection{}
-	\subsubsection{}
-	\subsubsection{}
-	\subsubsection{}
-\subsection{}
-	\subsubsection{}
-	\subsubsection{}
-	\subsubsection{}
-
-\todo{Fragen aus Own Clowd zuordnen}
-\todo{Gruppenübungs-Inhalte ergänzen}
+	\subsubsection{Thermische Oxidation}
+	Dafür wird der Wafer unter Sauerstoff erhitzt. Die Oxiddicke kann relativ gut durch die Zeit im Ofen eingestellt werden. Das Oxid entsteht dabei aus dem bereits bestehenden Silizium und wächst sowohl nach oben, als auch nach unten.
+	\subsubsection{Ionenimplantation}
+	Bei der Ionenimplantation werden Ionen des zu implantierenden Stoffes beschleunigt und auf die Oberfläche geschossen. Nur die stellen ohne Abdeckmaske werden getroffen. Dabei sind die Pfade(Trajektorien), die ein Ion durch das Material nimmt zufällig. Es gibt allerdings eine Wahrscheinlichkeitsverteilung die angibt, wie viele Dotieratome bei einer bestimmten Geschwindigkeit in welcher Tiefe vorliegen. Durch aufsummieren verschiedener Schritte mit unterschiedlichen Energien lässt sich somit ein eher rechteckiges Profil erstellen. Die Profile eines Prozessschrittes erinnern dabei eher an eine Gaußsche Glockenkurve. Durch anschließendes Tempern wird diese Kurze nun noch einmal geglättet.
+	\subsubsection{Lithografie}
+	Bei der Beleuchtung ergibt sich das Problem, dass die Wellenlänge des Lichtes, mit dem belichtet werden soll nicht mehr in den kleinen Größenordnungen funktioniert. deshalb rückt man immer näher an die Röntgenbereich, für welchem man allerdings keine Vernünftigen Masken produzieren kann, das Röntgenstrahlung den Großteil der Materie problemlos durchdringt. Momentan wird im sehr niedrigen UV Bereich gearbeitet. Die Probleme ergeben sich auch schon mit diesem Licht. Da die Wellenlänge so gering ist, gibt es keine geeigneten Linsensysteme, mit dem sich das Licht bündeln lassen könnte. Deshalb muss man hierbei auf andere Reflektionsverfahren setzten.
+	\subsection{Ätzen} Beim Ätzen unterschiedet man zwischen 2 Arten von Ätzen:
+	
+	\paragraph{Anisotrop} Beim Anisotrpen Ätzen wird das Material nur in eine bestimmte Richtung (z.B. nach unten in den Wafer hinein) geätzt. 
+	
+	\paragraph{Isotrop} Ingegen beim Isotropen Ätzen löst sich das Material in alle Richtungen Gleichmäßig auf. Dies kann problematisch sein, wenn sich die Flüssigkeit unter die Maskierte Schicht ätzt und Teile entfernt, die nicht entfernt werden sollten.
+	
+	Grundsätzlich spielen beim Ätzen einige Parameter eine wichtige Rolle. Zum einen gibt es eine Ätzrate, mit der das Material entfernt wird. Außerdem gibt es einen Ätzstop. Dies kann z.b. eine weitere Substanz sein, die das Ätzmittel neutralisiert und den Vorgang somit stoppt. Außerdem sind Ätzmittel selektiv, somit haben unterschiedliche Schichten und Materialien unterschiedliche Ätzraten.
+	
