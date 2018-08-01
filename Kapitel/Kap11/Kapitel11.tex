@@ -1,7 +1,7 @@
 \todo{Wichtige Begriffe erklären}
 \subsection{Element- und Verbindungshalbleiter}
 
-	Zunächst wird zwischen Element und Verbindungshalbleitern unterschieden. Bei den Elementhalbleitern handelt es sich um Silizium und Germanium. Dies sind beides Halbleiter der 4. Hauptgruppe (\ref{11_perioden}). Verbindungshalbleiter werden aus einer Verbindung von Elementen der 2. bis 6. Gauptgruppe zusammengesetzt. Einige Vertreter sind z.B. Gallium-Arsenid(GaAs) als Mischung von 3. und 5. Gruppe, Cadmium-Sulfid(CdS) als Verbindung von 2. und 6. und Silizium-Carbid(SiC) aus den Gruppen 4 und 6. Es gibt auch Verbindungshalbleiter die aus einer Mischung aus Germanium und Silizium bestehen. Dies kann für verspanntes Silizium verwendet werden. 
+	Zunächst wird zwischen Element und Verbindungshalbleitern unterschieden. Bei den Elementhalbleitern handelt es sich um Silizium und Germanium. Dies sind beides Halbleiter der 4. Hauptgruppe (\ref{11_perioden}). Verbindungshalbleiter werden aus einer Verbindung von Elementen der 2. bis 6. Hauptgruppe zusammengesetzt. Einige Vertreter sind z.B. Gallium-Arsenid(GaAs) als Mischung von 3. und 5. Gruppe, Cadmium-Sulfid(CdS) als Verbindung von 2. und 6. und Silizium-Carbid(SiC) aus den Gruppen 4 und 6. Es gibt auch Verbindungshalbleiter die aus einer Mischung aus Germanium und Silizium bestehen. Dies kann für verspanntes Silizium verwendet werden. 
 
 	\begin{figure}[h]
 		\centering
@@ -108,7 +108,7 @@
 
 	Generell lässt sich jedoch erkennen, dass sich die Farbspektren der unterschiedlichen Leuchtmittel stark unterscheiden (\ref{11_spektrum}). So hat eine Glühlampe einen sehr hohen Anteil an IR-Strahlung, was zu einem warmen (Wortwörtlich) Licht führt. Das Tageslicht enthält weniger rot, dafür mehr blau. Eine Leuchtstofflampe erzeugt nur einige genau definierte Spektralanteile. 
 	
-	\begin{figure}
+	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.5\textwidth]{Kapitel/Kap11/spektrum.png}
 		\caption{Das Licht der Sonne, einer Leuchtstofflampe, einer Glühlampe und einer LED im Vergleich}
@@ -116,12 +116,33 @@
 	\end{figure}
 	
 \subsection{Laser}
-\todo{machen}
+	\paragraph{LASER} Der Begriff Laser stellt ein Akronym des Begriffs Light Amplification by Stimulated Emission od Radiation, wörtlich übersetzt als Lichtverstärkung durch stimulierte Emission von Strahlung. Laser Licht hatte die drei genannten Eigenschaften: Es ist nahezu monochromatisch, kohärent und stark kollimiert. 1960 wurde der erste Rubinlaser gebaut. 2 Jahre später gab es den ersten HL-Laser.
 	\subsubsection{Funktionsprinzip (stimulierte Emission, Pumpen, beteiligte Energieniveaus, ...)}
+	Das Prinzip des Lasers ist das selbe wie bei einer LED. Es werden Elektronen auf ein höheres Energieniveau gehoben und strahlen beim herunterfallen diese Energiedifferenz aus. Bei der Absorption wird die genannte Elektron nach oben gehoben. Danach kommt es zur Emission. Dies kann entweder spontan oder induziert/stimuliert geschehen. Bei ersterem ist der Zustand eher instabil, daher geschieht der Übergang spontan. Die Aussenderichtung ist beliebig. Bei letzterem wird der Übergang durch ein äußeres Feld erzwungen. Dies geschieht in die selbe Richtung bei gleicher Phase der Erregung. Dies geschieht auf einen Schlag.
 	
+	\paragraph{Übergänge}
+	Um den eigentlichen Laserübergang nicht zu stören, werden die Elektronen zunächst auf ein Pumpniveau gehoben. Von hier aus fallen sie recht schnell auf ein niedrigeres Level, das obere Laserniveau, ab. Der Übergang zu dem unteren Laserniveau ist nur langsam, somit kommt es zu stimulierter Emission. von dem unterem Niveau fallen sie dann wieder schnell in einen Grundzustand ab, von welchen sie wieder nach oben gepumpt werden. Nur der eigentliche Laserübergang ist strahlend. Somit kann das ganze störungsfrei ablaufen.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{Kapitel/Kap11/uebergang.png}
+		\caption{Die Laserübergänge}
+		\label{11_uebergang}
+	\end{figure}
 	\subsubsection{Resonatoren}
+	Innerhalb eines Lasers entstehen durch optische Rückkopplung/Spiegelung stehende Wellen. Diese Welle regt wiederum weitere Elektronen zur Emission an. Aus diesem Grund ist die Justierung der Spiegel besonders wichtig. Schon einige Mikrometer genügen um stehenden Wellen zu verhindern. Einer der Spiegel ist dabei leicht durchlässig, um das Licht auszukoppeln.
 	\subsubsection{Halbleiterlaser (Prinzipeller Aufbau, VCSEL, ...)}
-
-
-\todo{Fragen aus Own Clowd zuordnen}
-\todo{Gruppenübungs-Inhalte ergänzen}
+	Bei Halbleiterlaser (\ref{11_kantenlaser}) entsteht die Emission durch Rekombinationen an pn-Übergängen. Die Endflächen sind reflektierend und dienen so als Spiegel.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{Kapitel/Kap11/kantenlaser.png}
+		\caption{Die Laserübergänge}
+		\label{11_kantenlaser}
+	\end{figure}
+	\paragraph{VCSEL}Handelt es sich um einen VCSEL (Vertical-Cavity Surface-Emitting Laser) (\ref{11_hllaser}) werden zu Spiegelung mehrere Schichten von abwechselnden Materialien verwendet. Die Anzahl der Schichten bestimmt zum größten Teil den Reflektionsfakor. Aber auch die Wellenlänge. So werden nicht passende Wellenlängen oder schräge Strahlen mehr oder weniger durchgelassen und können sich nicht weiter ausbreiten.
+	Generell strahlt der Laser aber von seiner Oberfläche aus. Somit ist bei diesem der eigentliche Laserbereich sehr dünn. Die Ausgangsleistung ist dementsprechend klein im Vergleich zu Kantenemittern.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{Kapitel/Kap11/hllaser.png}
+		\caption{Die Laserübergänge}
+		\label{11_hllaser}
+	\end{figure}
